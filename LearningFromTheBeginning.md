@@ -101,9 +101,9 @@ But we can get trickier!
 
 You've probably guessed by now that you can also subtract, multiply, and divide.  Here's how those look:
 
-    (firstNumber - secondNumber);
-    (firstNumber * secondNumber);
-    (firstNumber / secondNumber);
+    (firstNumber - secondNumber)
+    (firstNumber * secondNumber)
+    (firstNumber / secondNumber)
 
 Some examples:
 
