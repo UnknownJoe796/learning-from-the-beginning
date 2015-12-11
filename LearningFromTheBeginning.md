@@ -1,12 +1,12 @@
 # Programming from the Beginning
 
-I've noticed throughout my tutoring career that programming usually poorly taught, because they skip through explaining what something does and just have you write a big thing you don't understand yet.  They try to explain it like it's a human language.
+I've noticed throughout my tutoring career that programming usually poorly taught.  They skip through explaining what something does and just have you copy and paste you don't understand yet, thinking "oh, you'll get it.".  They try to explain it like it's a human language.
 
 It's not.
 
-Programming langauges are very exact, and there is no magic behind their format.
+Programming langauges are very exact, and there is no magic behind their format.  Every piece works the way it does for a reason.
 
-I'm going to be teaching this using a new piece of technology called Light Table, and I'll coach you on getting set up first.
+I've created this tutorial to help people learn how programming actually works, starting from the beginning (what does this piece mean) rather than the end (paste this in and see if you can read it).
 
 ####Note on those darn Macs:
 You'll use Command key instead of the Control key.  Everywhere I say "CTRL", just use Command instead.
@@ -28,12 +28,13 @@ Let's get things set up for Javascript.
 - Click "Browser".  It should open up a blank white page.  For now, you can just switch back to our file by clicking it's tab on the top.
 
 To run your work, you can use:
+
 - CTRL + ENTER which runs only the line your cursor is on or whatever you have selected
 - or CTRL + SHIFT + ENTER, which runs the entire file.
 
 You're now ready to begin!
 
-Sidenote: You are able to use Light Table for a lot of different languages in a similar way to how we're using it for Javascript.  You'll have to go to them for more information about that.
+Sidenote: You are able to use Light Table for a lot of different languages in a similar way to how we're using it for Javascript.  You'll have to go to them for more information.
 
 
 
@@ -68,9 +69,9 @@ Here are some examples.  Try them one at a time.
     98.82;
     1.42e5;
 
-Pretty easy, right?  You can try it out right now.  Put a number in your file on it's own line and press CTRL + ENTER. A box with the number should show up right next to it!  That box is showing you the result of that expression.
+Pretty easy, right?  You can try it out right now.  Put a number in your file on it's own line and press CTRL + ENTER.  A box with the number should show up right next to it.  That box is showing you the result of that expression.
 
-That's not very helpful though!  It only gives back that we put in!  We can do math too though.
+That's not very helpful by itself though; it only gives back that we put in!  Let's look at another type of expression.
 
 
 
@@ -80,15 +81,15 @@ A plus expression adds two numbers together.  It is structured like this:
 
     (firstNumber + secondNumber)
 
-This is the first expression we've come across that uses inputs.  And those inputs are... expressions.  That's right, we're talking about "inception" right here.  Expressions inside expressions.  That's how all of programming is done.
+This is the first expression we've come across that uses inputs.  And those inputs are... expressions.  That's right, expressions inside expressions.  That's how all of programming is done.
 
-Here are some examples:
+Here are some examples using numbers for those expressions:
 
     (1 + 2);
     (53.2 + 95.5);
     (53 + -22);
 
-But we can get trickier.
+But we can get trickier!
 
     ((42 + 12) + 24);
 
