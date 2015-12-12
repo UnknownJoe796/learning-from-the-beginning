@@ -8,7 +8,7 @@ Programming langauges are very exact, and there is no magic behind their format.
 
 I've created this tutorial to help people learn how programming actually works, starting from the beginning (what does this piece mean) rather than the end (paste this in and see if you can read it).
 
-####Note on those darn Macs:
+####Note on Macs:
 You'll use Command key instead of the Control key.  Everywhere I say "CTRL", just use Command instead.
 
 
@@ -32,9 +32,41 @@ To run your work, you can use:
 - CTRL + ENTER which runs only the line your cursor is on or whatever you have selected
 - or CTRL + SHIFT + ENTER, which runs the entire file.
 
+If it doesn't work, try connecting it to "Light Table UI" instead.
+
 You're now ready to begin!
 
 Sidenote: You are able to use Light Table for a lot of different languages in a similar way to how we're using it for Javascript.  You'll have to go to them for more information.
+
+
+
+##A Comment About Comments
+
+Comments are text inside code files that isn't run by the computer.
+
+That's how you keep notes on what your code means.  Without writing notes about it, it's easy to forget what a certain piece does.
+
+Other people will probably read your code and comments too, so they should be written in plain, easy-to-read English.
+
+They look like this:
+
+    //This is a comment.
+
+    Real code is here.  //However, this part is a comment.
+
+    Here is some more code.
+
+    //More comments!!
+
+    /*This is a special type of comment
+    that can be really long and
+    go across many lines.*/
+
+    More code!!
+
+Anything that comes after // on a line is just a comment and the computer just ignores it.
+
+Same thing goes for anything inbetween /\* and \*/.
 
 
 
@@ -44,7 +76,7 @@ Before we can really understand code, we need to understand what an "expression"
 
 An expression is an instruction for the computer.  Bam, it's that simple.
 
-Expressions can require *inputs* and usually have a *result*.
+Expressions can require inputs and usually have a result.  We call the inputs *arguments* or *parameters*, and we say that an expression *returns* the result.  So if I say that the expression *returns* something, that means that it's result is that something.
 
 There are lots of different things that are expressions.  Some expressions are just numbers, some do math, some put things on the screen, and some store information.
 
@@ -65,9 +97,9 @@ Here are some examples.  Try them one at a time.
     134;
     1;
     0;
-    -42;
-    98.82;
-    1.42e5;
+    -42;  //You can use negatives.
+    98.82;  //Decimals are OK.
+    1.42e5; //"e" is for scientific notation.
 
 Pretty easy, right?  You can try it out right now.  Put a number in your file on it's own line and press CTRL + ENTER.  A box with the number should show up right next to it.  That box is showing you the result of that expression.
 
@@ -121,7 +153,7 @@ Some examples:
 
 You don't need to use parenthenses around every piece of math, because the computer is smart.  It knows about [order of operations](http://www.purplemath.com/modules/orderops.htm) and can figure out what you mean.
 
-Example:
+Examples:
 
     3 * 2 + 4;
     4 + 5 - 6;
@@ -130,30 +162,100 @@ You can use this as a calculator now!  You can do a lot more than that though.
 
 
 
-##A Comment About Comments
+## Storage
 
-Comments are writing inside code files that isn't run by the computer.
+You will frequently need to store information and then use it again.  Javascript has a simple way of doing this.  They are called *variables*.
 
-That's how you keep notes on what your code means.  Without writing notes about it, it's easy to forget what a certain piece does.
+### Setting aside a name
+This is called *delcaring a variable*.
 
-Other people will probably read your code and comments too, so they should be written in plain, easy-to-read English.
+*This is a statement, and can't be used as an expression.*
 
-They look like this:
+    var name;
 
-    //This is a comment.
+### Giving that name some information
+This is called *assigning a variable* or *setting a variable*.
 
-    Real code is here.  //However, this part is a comment.
+This is an expression, and it returns whatever it set name to.
 
-    Here is some more code.
+The part on the right is always done first.
 
-    //More comments!!
+    name = expression;
 
-    /*This is a special type of comment
-    that can be really long and
-    go across many lines.*/
+This is most properly translated to English as "Set name to expression".  It's not really like equals, and the computer won't do algebra for you.
 
-    More code!!
+### Getting that information back
+This expression returns the information you stored in it earlier.
 
-Anything that comes after // on a line is just a comment and the computer just ignores it.
+    name;
 
-Same thing goes for anything inbetween /\* and \*/.
+### Short hand for declaring and assigning
+
+    var name = expression;
+
+### Some examples:
+
+    var x;
+    x = 22;
+
+    var y = 43 - 29;
+
+    x + 8;
+    x + 2;
+
+    x = y - 4;
+
+    var z = x + y;
+    z;
+
+    x = x + 4;
+    /*Seems odd, doesn't it?  But since the part on the right happens first,
+    it takes the old "x" and adds 4 to it, then sets "x" to that new number.*/
+
+    y = y * z;
+
+Test them out and get used to them, because you'll be using them a lot.
+
+
+## What About Words?
+
+Numbers are one thing, but what about text?  In programming, text is usually called a *string*, which is short for a string of characters.  It can be empty or include spaces, letters, numbers and symbols.  They can be as long as you need them to be.
+
+Examples:
+
+    ""; //an empty string
+    "Hello world!";
+    " "; //a string with just a space in it
+    "This is a longer set of words.  You can make strings a lot longer than one sentence.";
+
+But what if the text is supposed to contain two lines, not just one?  And how would you use tabs?  What about a quote?  You can use these *escape sequences*.
+
+| Code | Means          |
+|------|----------------|
+|\'	   |single quote    |
+|\"	   |double quote    |
+|\\\\  |backslash       |
+|\n	   |new line        |
+|\t	   |tab             |
+
+Examples:
+
+    "This is some text\non two lines";
+    "\tThis is indented";
+    "\\, \", and \' require backslashes to work";
+
+Try some out yourself!
+
+
+
+## Putting Words Together
+
+Sometimes we want to take several strings and put them together.  That's called concatenation.  It's really easy to do; just add two strings together!
+
+Example:
+
+    "This " + "and that";
+
+Even more, though, we can add a number to the end of a string using the same thing:
+
+    "Current score: " + 8;
