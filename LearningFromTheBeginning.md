@@ -1,10 +1,10 @@
 # Programming from the Beginning
 
-I've noticed throughout my tutoring career that programming usually poorly taught.  They skip through explaining what something does and just have you copy and paste you don't understand yet, thinking "oh, you'll get it.".  They try to explain it like it's a human language.
+I've noticed throughout my tutoring career that programming usually poorly taught.  They skip through explaining what something does and just have you copy and paste something you don't understand yet, thinking "oh, you'll get it.".  They try to explain it like it's a human language.
 
 It's not.
 
-Programming langauges are very exact, and there is no magic behind their format.  Every piece works the way it does for a reason.
+Programming langauges are very exact, and there is no magic.  Every piece works the way it does for a reason.
 
 I've created this tutorial to help people learn how programming actually works, starting from the beginning (what does this piece mean) rather than the end (paste this in and see if you can read it).
 
@@ -15,14 +15,14 @@ You'll use Command key instead of the Control key.  Everywhere I say "CTRL", jus
 
 ##Setting up Light Table
 
-Download and run [Light Table](http://lighttable.com/).  This will vary depending on what OS (as in Windows, Mac, or Linux) you are using, but it will be as simple as downloading the zipped file, unzipping it, and clicking LightTable.
+Download and run [Light Table](http://lighttable.com/).  This will vary depending on what OS (as in Windows, Mac, or Linux) you are using, but it will be as simple as downloading the file, unzipping it, and opening LightTable.
 
-Looks like a nice, simple text editor, eh?  It also has a lot of hidden power.  You can access all of the things it can do by pressing CTRL + SPACE.  It will open a drawer on the right side of the window where you can search all of the things the editor can do and use them.
+Looks like a nice, simple text editor, eh?  It has a lot of hidden power.  You can access all of the things it can do by pressing CTRL + SPACE.  It will open a drawer on the right side of the window where you can search all of the things the editor can do and use them.
 
 Let's get things set up for Javascript.
 
 - Make a new file. (CTRL + N)
-- Set the *syntax* (a.k.a. language) of the file by pressing CTRL + SPACE and typing "syntax".  Select the action called "Editor: Set current editor syntax" and pick Javascript.
+- Set the *syntax* (language) of the file by pressing CTRL + SPACE and typing "syntax".  Select the action called "Editor: Set current editor syntax" and pick Javascript.
 - Press CTRL + SHIFT + ENTER to run your empty file.  It will pop up with a message saying "No client available."
 - Click "Connect a client".
 - Click "Browser".  It should open up a blank white page.  For now, you can just switch back to our file by clicking it's tab on the top.
@@ -44,7 +44,7 @@ Sidenote: You are able to use Light Table for a lot of different languages in a 
 
 Comments are text inside code files that isn't run by the computer.
 
-That's how you keep notes on what your code means.  Without writing notes about it, it's easy to forget what a certain piece does.
+Writing comments how you keep notes on what your code means.  Without writing notes, it's easy to forget what a certain piece of code does.
 
 Other people will probably read your code and comments too, so they should be written in plain, easy-to-read English.
 
@@ -72,13 +72,15 @@ Same thing goes for anything inbetween /\* and \*/.
 
 ##Learning about Expressions
 
-Before we can really understand code, we need to understand what an "expression" is.
+Before you can really understand code, you need to understand what an "expression" is.
 
 An expression is an instruction for the computer.  Bam, it's that simple.
 
-Expressions can require inputs and usually have a result.  We call the inputs *arguments* or *parameters*, and we say that an expression *returns* the result.  So if I say that the expression *returns* something, that means that it's result is that something.
+Expressions can require inputs and usually have a result.  We call the inputs *arguments* or *parameters*, and we say that an expression *returns* the result.  So if I say that the expression *returns* something, it's result is that something.
 
-There are lots of different things that are expressions.  Some expressions are just numbers, some do math, some put things on the screen, and some store information.
+You can see what an expression returns in Light Table by selecting it and pressing CTRL + ENTER.
+
+There are lots of different things that are expressions.  Some expressions are just numbers, some do math, some put things on the screen, and some store information.  I'm going to teach you a lot of them.
 
 We separate different expressions using semicolons (;), similar to how you would use periods to end a sentence in English.
 
@@ -86,7 +88,7 @@ Let me give you some examples.
 
 
 
-##Our First Expression: Numbers
+##Our First Expressions: Numbers
 
 Let's start with a really easy expression: a number.
 
