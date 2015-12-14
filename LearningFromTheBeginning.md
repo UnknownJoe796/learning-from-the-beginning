@@ -42,7 +42,7 @@ Sidenote: You are able to use Light Table for a lot of different languages in a 
 
 ##A Comment About Comments
 
-Comments are text inside code files that isn't run by the computer.
+Comments are text inside code files that aren't run by the computer.
 
 Writing comments how you keep notes on what your code means.  Without writing notes, it's easy to forget what a certain piece of code does.
 
