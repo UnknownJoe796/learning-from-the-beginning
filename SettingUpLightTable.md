@@ -1,4 +1,4 @@
-##Setting up Light Table
+#Setting up Light Table
 
 Download and run [Light Table](http://lighttable.com/).  This will vary depending on what OS (as in Windows, Mac, or Linux) you are using, but it will be as simple as downloading the file, unzipping it, and opening LightTable.
 

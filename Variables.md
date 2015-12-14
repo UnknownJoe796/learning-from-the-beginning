@@ -1,4 +1,4 @@
-## Variables
+# Variables
 
 You will frequently need to store information and then use it again.  Javascript has a simple way of doing this.  They are called *variables*.
 

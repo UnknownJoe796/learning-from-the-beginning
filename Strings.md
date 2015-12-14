@@ -1,4 +1,4 @@
-## What About Words?
+# What About Words?
 
 Numbers are one thing, but what about text?  In programming, text is usually called a *string*, which is short for a string of characters.  It can be empty or include spaces, letters, numbers and symbols.  They can be as long as you need them to be.
 
